@@ -1,0 +1,106 @@
+tajweed.ghn {
+  color: #ff7e1e;
+}
+tajweed.ghn:hover {
+  background-color: #ff7e1e;
+  color: black;
+}
+tajweed.qlq {
+  color: #dd0008;
+}
+
+tajweed.qlq:hover {
+  background-color: #f3a6a9;
+  color: #dd0008;
+  cursor: pointer;
+}
+tajweed.idgh_ghn {
+  color: #169200;
+}
+
+tajweed.idgh_ghn:hover {
+  background-color: #9ce58e;
+  color: #169200;
+  cursor: pointer;
+}
+tajweed.idgh_w_ghn {
+  color: #169200;
+}
+
+tajweed.idgh_w_ghn:hover {
+  background-color: #9ce58e;
+  color: #169200;
+  cursor: pointer;
+}
+tajweed.iqlb {
+  color: #26bffd;
+}
+
+tajweed.iqlb:hover {
+  background-color: #92e5ff;
+  color: #0099c5;
+  cursor: pointer;
+}
+tajweed.ikhf {
+  color: #9400a8;
+}
+
+tajweed.ikhf:hover {
+  background-color: #daa6e1;
+  color: #9400a8;
+  cursor: pointer;
+}
+
+tajweed.ikhf_shfw {
+  color: #d500b7;
+}
+
+tajweed.ikhf_shfw:hover {
+  background-color: #f0a6e6;
+  color: #d500b7;
+  cursor: pointer;
+}
+tajweed.idghm_shfw {
+  color: #58b800;
+}
+
+tajweed.idghm_shfw:hover {
+  background-color: #bae890;
+  color: #58b800;
+  cursor: pointer;
+}
+tajweed.slnt {
+  color: #aaaaaa;
+}
+
+tajweed.ham_wasl {
+  color: #aaaaaa;
+}
+
+tajweed.ham_wasl:hover {
+  background-color: #d7d7d7;
+}
+
+tajweed.madda_necessary {
+  color: #000ebc;
+}
+
+tajweed.madda_obligatory {
+  color: #2144c1;
+}
+
+tajweed.madda_permissible {
+  color: #4050ff;
+}
+
+tajweed.madda_normal {
+  color: #537fff;
+}
+
+.idgh_mus {
+  color: #a1a1a1;
+}
+
+tajweed.idgh_mus:hover {
+  background-color: #d7d7d7;
+}

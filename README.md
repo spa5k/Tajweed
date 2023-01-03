@@ -1,30 +1,69 @@
-# esbuild-typescript-library-template
+# Tajweed
 
-A template for building a library through typescript and bundling it through esbuild.
+_Tajweed-ts is [npm](https://en.wikipedia.org/wiki/Npm_(software)) package for Tajweed and Buck_
 
-Uses yarn v3.1 alongside latest pnp support.
+## Quran Tools for Parsing Tajweed and Buck
 
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/esbuild-typescript-library-template?logo=files&style=for-the-badge)
-![npm](https://img.shields.io/npm/v/esbuild-typescript-library-template?logo=npm&style=for-the-badge)
-![node-current](https://img.shields.io/badge/Node-%3E=14-success?style=for-the-badge&logo=node)
-![npm](https://img.shields.io/npm/dw/esbuild-typescript-library-template?style=for-the-badge)
+The npm package is to be used with the [AlQuran.cloud](https://alquran.cloud/api) and [GlobalQuran.com](http://docs.globalquran.com/API:Data/Quran_List) APIs. They are made available so you may get the most out of the APIs.
 
-## Getting started
+## Installation
 
-1. `git clone git@github.com:spa5k/esbuild-typescript-library-template.git my-project`
-2. `cd my-project`
-3. `yarn install`
+Use the package manager [npm](https://www.npmjs.com/) to install Tajweed.
 
-### Releasing
+```bash
+npm install tajweed-ts
+#or
+yarn add tajweed-ts
+#or
+pnpm add tajweed-ts
+```
 
-Under the hood, this library uses [semantic-release](https://github.com/semantic-release/semantic-release) and [commitizen](https://github.com/commitizen/cz-cli).
-The goal is to avoid manual release process. Using `semantic-release` will automatically create a github release (hence tags) as well as an npm release.
-Based on your commit history, `semantic-release` will automatically create a patch, feature or breaking release.
+## Usage
 
-### Visualization of this Repo.
+```javascript
+const { Tajweed } = require("tajweed-ts");
 
-![Visualization of this repo](./diagram.svg)
+let string = "۞ ٱللَّهُ نُورُ [h:9421[ٱ][l[ل]سَّمَ[n[ـٰ]و[n[َٲ]"; //
+let parseTajweed = new Tajweed();
+let parseString = parseTajweed.parse("string", true);
+console.log(parseString);
+```
 
-Commands:
+OR
 
-- `semantic-release`: triggers a release (used in CI)
+```javascript
+import "tajweed-ts/tajweed.css";
+import { Tajweed } from "tajweed-ts";
+
+function App() {
+  let string = "۞ ٱللَّهُ نُورُ [h:9421[ٱ][l[ل]سَّمَ[n[ـٰ]و[n[َٲ]"; //
+  let parseTajweed = new Tajweed();
+  let parseString = parseTajweed.parse(string, true);
+
+  return <div dangerouslySetInnerHTML={{ __html: parseString }}></div>;
+}
+
+export default App;
+```
+
+OR
+
+```typescript
+import { Tajweed } from "tajweed-ts";
+
+let string = "۞ ٱللَّهُ نُورُ [h:9421[ٱ][l[ل]سَّمَ[n[ـٰ]و[n[َٲ]"; //
+let parseTajweed = new Tajweed();
+let parseString = parseTajweed.parse(string, true);
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+Source code is taken from https://github.com/aamirbhat382/Tajweed @aamirbhat382, moved to typescript and added few tests.
