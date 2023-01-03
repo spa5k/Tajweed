@@ -1,0 +1,20 @@
+{
+  "conventionalCommits.scopes": [
+    "main",
+    "deps",
+    "actions",
+    "test",
+    "husky",
+    "docs"
+  ],
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.defaultFormatter": "dprint.dprint",
+  "editor.formatOnSave": true,
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
+}
