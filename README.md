@@ -1,5 +1,9 @@
 # Tajweed
 
+[![NPM downloads](https://img.shields.io/npm/dm/tajweed-ts.svg?style=for-the-badge)](https://www.npmjs.com/package/tajweed-ts)
+[![npm](https://img.shields.io/npm/v/tajweed-ts?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/tajweed-ts)
+![node-current](https://img.shields.io/badge/Node-%3E=14-success?style=for-the-badge&logo=node)
+
 _Tajweed-ts is [npm](https://en.wikipedia.org/wiki/Npm_(software)) package for Tajweed and Buck_
 
 ## Quran Tools for Parsing Tajweed and Buck
